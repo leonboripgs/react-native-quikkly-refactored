@@ -15,6 +15,10 @@ export class Quikkly {
   static createImage(options = {}) {
     return QuikklyManager.createImage(options)
   }
+
+  static scanSingleImage(options = '') {
+    return QuikklyManager.scanSingleImage(options)
+  }
 }
 
 const QuikklyScanView = requireNativeComponent("QuikklyScanView", QuikklyView)
