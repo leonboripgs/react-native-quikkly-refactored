@@ -1,56 +1,25 @@
 {
-  "_from": "react-native-quikkly",
-  "_id": "react-native-quikkly@3.4.18",
-  "_inBundle": false,
-  "_integrity": "sha512-KjsX6cNs+YaEgI4nFjcP9LPADk9zsmO/8ZB9j9npjqxGpMrKl85U2gZiaQ5VP7q2jRDLAEyuS76dbnUIbHjmSQ==",
-  "_location": "/react-native-quikkly",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "react-native-quikkly",
-    "name": "react-native-quikkly",
-    "escapedName": "react-native-quikkly",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/react-native-quikkly/-/react-native-quikkly-3.4.18.tgz",
-  "_shasum": "132e607051335971ebc8c1371faaf859dcfe9256",
-  "_spec": "react-native-quikkly",
-  "_where": "E:\\Project\\20191014_Bennet_react native\\metadallion",
-  "author": {
-    "name": "Janek Priimann"
-  },
-  "bugs": {
-    "url": "https://github.com/quikkly/react-native/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
+  "name": "react-native-quikkly",
   "description": "React Native plugin for the Quikkly iOS and Android SDKs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quikkly/react-native.git"
+  },
+  "version": "3.4.18",
   "homepage": "https://developers.quikkly.io/home/wrappersframeworks/",
   "keywords": [
-    "react",
+  	"react",
     "react-native",
     "quikkly",
     "scanning",
     "native"
   ],
+  "author": "Janek Priimann",
   "license": "Apache-2.0",
   "main": "Quikkly.js",
-  "name": "react-native-quikkly",
   "nativePackage": true,
   "peerDependencies": {
     "react": "*",
     "react-native": "^0.61.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/quikkly/react-native.git"
-  },
-  "version": "3.4.18"
+  }
 }
