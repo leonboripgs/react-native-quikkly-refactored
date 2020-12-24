@@ -1,7 +1,9 @@
 # react-native-quikkly-refactored
 ** React Native Quikkly Module with scan single image **
-*Function name : scanSingleImage(option)*
-** Example **
+
+-*Function name : scanSingleImage(option)*
+
+-** Example **
 ```
 QuikklyManager.scanSingleImage({ photoUri: response.uri }).then(
   (result) => {
