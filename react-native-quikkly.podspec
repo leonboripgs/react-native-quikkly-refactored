@@ -1,5 +1,4 @@
 require 'json'
-
 package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
 
 Pod::Spec.new do |s|
@@ -16,5 +15,5 @@ Pod::Spec.new do |s|
   s.source_files  = "ios/**/*.{h,m}"
 
   s.dependency 'React'
-  s.dependency 'Quikkly', "~> 3.4.18"
+  s.dependency 'Quikkly', "~> #{s.version}"
 end
