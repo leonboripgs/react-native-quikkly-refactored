@@ -1,0 +1,72 @@
+import groovy.json.JsonSlurper
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.1'
+    }
+	
+    ext {
+        buildToolsVersion = "29.0.3"
+        minSdkVersion = 21
+        compileSdkVersion = 29
+        targetSdkVersion = 29
+        supportLibVersion = "29.0.0"
+	}
+}
+
+apply plugin: "com.android.library"
+
+ext {
+    junit_version = "4.12"
+    support_version = "27.1.1"
+    test_runner_version = "1.0.2"
+    test_espresso_version = "3.0.2"
+    sdk_version = 29
+}
+
+def quikklyLibVersion = new JsonSlurper().parseText(file("../package.json").text).version
+
+android {
+    compileSdkVersion rootProject.hasProperty("compileSdkVersion") ? rootProject.compileSdkVersion : project.property("sdk_version")
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion rootProject.hasProperty("targetSdkVersion") ? rootProject.targetSdkVersion : project.property("sdk_version")
+        versionCode 1
+        versionName "$quikklyLibVersion"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+}
+
+repositories {
+    google()
+    jcenter()
+    maven { url 'https://quikklysdks.bintray.com/quikkly-android-sdk' }
+    maven { url "$rootDir/../node_modules/react-native/android" }
+}
+
+dependencies {
+    def supportLibVersion = rootProject.hasProperty("supportLibVersion") ? rootProject.supportLibVersion : project.property("support_version")
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "net.quikkly.core:quikklycore-lib:$quikklyLibVersion"
+    implementation "net.quikkly.android:quikkly-lib:$quikklyLibVersion@aar"
+    implementation "com.android.support:appcompat-v7:$supportLibVersion"
+    implementation "com.android.support:design:$supportLibVersion"
+    implementation "com.android.support:support-v13:$supportLibVersion"
+    implementation "com.android.support:support-vector-drawable:$supportLibVersion"
+    implementation "com.facebook.react:react-native:+"
+    testImplementation "junit:junit:$junit_version"
+    androidTestImplementation "com.android.support.test:runner:$test_runner_version"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$test_espresso_version"
+}
