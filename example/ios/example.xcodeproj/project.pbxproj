@@ -19,7 +19,6 @@
 		32B52AF4149E68EDD9BBF849 /* libPods-exampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03EE07A2280C67235EE0C27A /* libPods-exampleTests.a */; };
 		522C819063838CA508F487C8 /* libPods-example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 174648CF67C5403982BF3AB4 /* libPods-example.a */; };
 		79E7ECF63C7819682EE9981E /* libPods-example-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E151620271BC1D9CCB0C88 /* libPods-example-tvOSTests.a */; };
-		94E7BC6923C3F2FD001C0665 /* blueprint_0098.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E7BC6823C3F2FD001C0665 /* blueprint_0098.json */; };
 		DA98D6F69424EA4AA63AD386 /* libPods-example-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C03D79C2A30FFBD05210D8E /* libPods-example-tvOS.a */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +62,6 @@
 		65E151620271BC1D9CCB0C88 /* libPods-example-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-example-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76317F534F4A8AF59A8CB599 /* Pods-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.release.xcconfig"; path = "Target Support Files/Pods-example/Pods-example.release.xcconfig"; sourceTree = "<group>"; };
 		8B758267357E1AB161A92574 /* Pods-example-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example-tvOS.release.xcconfig"; path = "Target Support Files/Pods-example-tvOS/Pods-example-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		94E7BC6823C3F2FD001C0665 /* blueprint_0098.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = blueprint_0098.json; sourceTree = "<group>"; };
 		950E8624A30E2F7C86B2559F /* Pods-example-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-example-tvOSTests/Pods-example-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		D8C5F1EB3CAF4662E5C5D96A /* Pods-exampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exampleTests.debug.xcconfig"; path = "Target Support Files/Pods-exampleTests/Pods-exampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -127,7 +125,6 @@
 		13B07FAE1A68108700A75B9A /* example */ = {
 			isa = PBXGroup;
 			children = (
-				94E7BC6823C3F2FD001C0665 /* blueprint_0098.json */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -345,7 +342,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				94E7BC6923C3F2FD001C0665 /* blueprint_0098.json in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
